@@ -1,4 +1,6 @@
-FROM registry.opensource.zalan.do/library/alpine-3.15:latest
+ARG BASE_IMAGE=registry.opensource.zalan.do/library/alpine-3.15:latest
+
+FROM $BASE_IMAGE
 LABEL maintainer="Team ACID @ Zalando <team-acid@zalando.de>"
 
 # We need root certificates to deal with teams api over https
